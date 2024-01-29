@@ -8,6 +8,9 @@ a {
 }
 
 img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 ul {
   list-style: none;
@@ -16,11 +19,15 @@ ul {
   padding-left: 0;
 }
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .container {
-  width: 1158px;
+  width: 100%;
+  max-width: 320px;
+  /* width: 1158px; */
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -308,8 +315,17 @@ button {
 }
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
+.team-container {
+  width: 100%;
+  max-width: 294px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .team-soc-list {
   display: flex;
   gap: 24px;
@@ -355,7 +371,8 @@ button {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
+  width: 100%;
 }
 
 .team-img {
@@ -377,6 +394,7 @@ button {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 /*------------PORTFOLIO-------------*/
 
@@ -395,11 +413,13 @@ button {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  /* column-gap: 24px;
+  row-gap: 48px; */
+  gap: 48px;
 }
 .portfolio-item {
-  width: calc((100% - 48px) / 3);
+  width: 100%;
+  /* width: calc((100% - 48px) / 3); */
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -813,4 +833,57 @@ button {
 
 .footer-input::placeholder {
   color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 768px;
+  }
+  .portfolio-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .portfolio-item {
+    width: calc((100% - 24px) / 2);
+  }
+  /* ----------- */
+  .team-list {
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+  .team-container {
+    /* width: 100%; */
+    max-width: 582px;
+    margin: 0 auto;
+  }
+  .team-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .container {
+    max-width: 1158px;
+  }
+
+  .portfolio-list {
+    row-gap: 48px;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 48px) / 3);
+  }
+
+  /* ----------- */
+  /* .team-container {
+    max-width: 1158px;
+  } */
+  .team-list-item {
+    width: calc((100% - 72px) / 4);
+  }
 }
