@@ -29,8 +29,8 @@ ul {
   max-width: 320px;
   /* width: 1158px; */
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 img {
@@ -836,7 +836,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 100%;
+    /* width: 100%; */
     max-width: 768px;
   }
   .portfolio-list {
@@ -869,6 +869,8 @@ button {
 
   .container {
     max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .portfolio-list {
