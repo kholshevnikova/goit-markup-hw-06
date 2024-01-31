@@ -529,8 +529,10 @@ button {
   border-radius: 4px;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-  width: 408px;
-  min-height: 584px;
+  /* width: 408px; */
+  width: 288px;
+  /* min-height: 584px; */
+  min-height: 623px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -561,12 +563,12 @@ button {
 .modal-text {
   color: #2e2f42;
   text-align: center;
-  max-width: 360px;
+  /* max-width: 360px; */
+  max-width: 256px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  /* padding-top: 72px; */
   margin-bottom: 16px;
 }
 
@@ -924,6 +926,15 @@ button {
     display: flex;
     flex-direction: column;
     gap: 12px;
+  }
+  /* ----------------- */
+  /* backdrop */
+  .modal {
+    width: 408px;
+    min-height: 584px;
+  }
+  .modal-text {
+    max-width: 360px;
   }
 }
 
