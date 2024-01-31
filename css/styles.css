@@ -433,17 +433,12 @@ button {
 /*------------footer-------------*/
 .footer {
   background: var(--NAVY-BLUE, #2e2f42);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
+  padding-top: 98px;
+  padding-bottom: 96px;
 }
 
-.footer-text {
-  color: var(--CLOUD, #f4f4fd);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  max-width: 264px;
-}
 .footer-logo {
   color: var(--IRIS, #4d5ae5);
   font-family: Raleway, sans-serif;
@@ -466,7 +461,9 @@ button {
 }
 .footer-container {
   display: flex;
-  align-items: baseline;
+  gap: 72px;
+  flex-direction: column;
+  /* align-items: baseline; */
 }
 
 .footer-soc-text {
@@ -476,17 +473,36 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  text-align: center;
+  /* прибрати текст-елайн на десктопи */
 }
 
 .footer-logo-container {
-  margin-right: 120px;
+  /* margin-right: 120px; */
+  /* повернути на десктопі */
+  text-align: center;
+  /* прибрати на десктопи */
 }
+
+.footer-text {
+  color: var(--CLOUD, #f4f4fd);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  /* max-width: 264px; */
+  max-width: 288px;
+  text-align: start;
+  /* прибрати на десктопи текст-елайн */
+}
+
 .footer-soc-wrapper {
   display: block;
 }
 .footer-soc-list {
   display: flex;
   gap: 16px;
+  justify-content: center;
+  /* прибрати на десткопи джастиф контент */
 }
 .footer-soc-link {
   width: 100%;
@@ -695,7 +711,10 @@ button {
 
 .footer-form {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  /* прибрати флекс-дір на десктопі */
+  /* gap: 24px; */
+  gap: 16px;
 }
 
 .footer-form-text {
@@ -705,9 +724,12 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
+  text-align: center;
+  /* прибрати на десктопи */
 }
 .footer-input {
-  width: 264px;
+  /* width: 264px; */
+  width: 288px;
   height: 40px;
   background-color: transparent;
   border-radius: 4px;
@@ -731,11 +753,13 @@ button {
   background-color: #4d5ae5;
   color: #fff;
   padding: 8px 24px;
-  min-width: 165px;
+  /* min-width: 165px; */
+  width: 165px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .footer-input-label {
@@ -1022,6 +1046,7 @@ button {
     flex-direction: row;
     gap: 40px;
   }
+  /* ---------FOOTER---- */
 }
 
 @media screen and (max-width: 1157px) {
