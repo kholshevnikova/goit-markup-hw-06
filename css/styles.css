@@ -435,7 +435,7 @@ button {
   background: var(--NAVY-BLUE, #2e2f42);
   /* padding-top: 100px;
   padding-bottom: 100px; */
-  padding-top: 98px;
+  padding-top: 96px;
   padding-bottom: 96px;
 }
 
@@ -474,14 +474,17 @@ button {
   letter-spacing: 0.02em;
   margin-bottom: 16px;
   text-align: center;
-  /* прибрати текст-елайн на десктопи */
 }
 
 .footer-logo-container {
   /* margin-right: 120px; */
-  /* повернути на десктопі */
   text-align: center;
-  /* прибрати на десктопи */
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .footer-text {
@@ -492,7 +495,6 @@ button {
   /* max-width: 264px; */
   max-width: 288px;
   text-align: start;
-  /* прибрати на десктопи текст-елайн */
 }
 
 .footer-soc-wrapper {
@@ -502,8 +504,8 @@ button {
   display: flex;
   gap: 16px;
   justify-content: center;
-  /* прибрати на десткопи джастиф контент */
 }
+
 .footer-soc-link {
   width: 100%;
   height: 100%;
@@ -712,9 +714,9 @@ button {
 .footer-form {
   display: flex;
   flex-direction: column;
-  /* прибрати флекс-дір на десктопі */
   /* gap: 24px; */
   gap: 16px;
+  align-items: center;
 }
 
 .footer-form-text {
@@ -725,8 +727,8 @@ button {
   letter-spacing: 0.02em;
   color: #ffffff;
   text-align: center;
-  /* прибрати на десктопи */
 }
+
 .footer-input {
   /* width: 264px; */
   width: 288px;
@@ -759,7 +761,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
 }
 
 .footer-input-label {
@@ -960,6 +961,46 @@ button {
   .modal-text {
     max-width: 360px;
   }
+  /* -------FOOTER---- */
+
+  .footer-container {
+    width: 496px;
+  }
+  .footer-top {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .footer-logo-container {
+    margin-right: 0;
+    text-align: start;
+  }
+
+  .footer-text {
+    min-width: 264px;
+  }
+  .footer-soc-list {
+    justify-content: flex-start;
+  }
+
+  .footer-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .footer-form-text {
+    text-align: start;
+  }
+  .footer-input {
+    width: 264px;
+  }
+  .footer-sub-button {
+    min-width: 165px;
+  }
+
+  .footer-soc-text {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1047,6 +1088,29 @@ button {
     gap: 40px;
   }
   /* ---------FOOTER---- */
+
+  .footer-container {
+    width: 1168px;
+    align-items: baseline;
+    gap: 0px;
+    flex-direction: row;
+  }
+  .footer-top {
+    gap: 0px;
+  }
+
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-logo-container {
+    margin-right: 120px;
+  }
+
+  .footer-form-container {
+    margin-left: 80px;
+  }
 }
 
 @media screen and (max-width: 1157px) {
