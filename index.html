@@ -790,7 +790,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="modal-close-icon" width="8" height="8">
@@ -857,14 +857,19 @@
               value="true"
             />
             <label for="user-privacy" class="check-text"
-              ><span class="checkbox-span"
-                ><svg class="check-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-check"></use></svg
-              ></span>
-
-              I accept the terms and conditions of the
-              <a class="checkbox-link">Privacy Policy</a></label
-            >
+              ><div class="checkbox-privacy">
+                <div class="checkbox-wrapper">
+                  <span class="checkbox-span"
+                    ><svg class="check-icon" width="10" height="8">
+                      <use href="./images/icons.svg#icon-check"></use></svg
+                  ></span>
+                </div>
+                <div class="checkbox-text-wrapper">
+                  I accept the terms and conditions of the
+                  <a class="checkbox-link">Privacy Policy</a>
+                </div>
+              </div>
+            </label>
           </div>
           <button type="submit" class="send-form-btn">Send</button>
         </form>
