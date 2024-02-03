@@ -822,7 +822,6 @@ button {
 .footer-form {
   display: flex;
   flex-direction: column;
-  /* gap: 24px; */
   gap: 16px;
   align-items: center;
 }
@@ -838,7 +837,6 @@ button {
 }
 
 .footer-input {
-  /* width: 264px; */
   width: 288px;
   height: 40px;
   background-color: transparent;
@@ -863,7 +861,6 @@ button {
   background-color: #4d5ae5;
   color: #fff;
   padding: 8px 24px;
-  /* min-width: 165px; */
   width: 165px;
   height: 40px;
   display: flex;
@@ -951,7 +948,6 @@ button {
     row-gap: 64px;
   }
   .team-container {
-    /* width: 100%; */
     max-width: 582px;
     margin: 0 auto;
   }
@@ -1053,10 +1049,8 @@ button {
   }
   .header-adress-link {
     color: var(--SLATE, #434455);
-    /* font-size: 16px; */
     font-size: 12px;
     font-weight: 400;
-    /* line-height: 1.5; */
     line-height: 1.16;
     letter-spacing: 0.02em;
     font-style: normal;
@@ -1180,6 +1174,7 @@ button {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
+    padding: 188px 0;
   }
 
   @media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
